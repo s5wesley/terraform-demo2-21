@@ -45,10 +45,10 @@ locals {
   enable_dns_support               = true
   enable_dns_hostnames             = true
   assign_generated_ipv6_cidr_block = false
-  cluster_name                     = "2560-dev-del"
+  cluster_name                     = "1983-dev-del"
 }
 
-module "vpc-02" {
+module "vpc" {
   source = "../../modules/vpc/"
   # source = "git::ssh://git@github.com/devopstia/terraform-course-del.git//aws-terraform/modules/vpc-02?ref=main"
   aws_region                       = local.aws_region
